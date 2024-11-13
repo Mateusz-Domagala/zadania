@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator prowizji</title>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        #kalkulator-prowizji {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid lightgreen;
+            border-radius: 8px;
+        }
+
+        #kalkulator-prowizji label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #kalkulator-prowizji input, #kalkulator-prowizji button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid lightgrey;
+            border-radius: 4px;
+        }
+
+        #kalkulator-prowizji button {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #kalkulator-prowizji p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h2>Kalkulator prowizji</h2>
+    <div id="kalkulator-prowizji">
+        <label for="xd">Kwota:</label>
+        <input type="number" id="xd" placeholder="Wprowadz kwote">
+
+        <label for="ok">Procent prowizji:</label>
+        <input type="number" id="ok" placeholder="Wpisz procent">
+
+        <button onclick="calculateCommission()">Oblicz</button>
+
+        <p id="wynik">Wynik: 0 PLN</p>
+    </div>
+    </center>
+    <script src="prowizja.js"></script>
+</body>
+</html>

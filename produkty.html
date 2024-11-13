@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog produktow</title>
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orangered;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.katalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.produkt {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.produkt:hover {
+    transform: translateY(-5px);
+}
+
+.produkt img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.produkt h2 {
+    font-size: 18px;
+    color: black;
+    margin: 10px 0 5px;
+}
+
+.produkt p {
+    margin: 5px 0;
+    color: black;
+}
+
+.produkt .cena {
+    font-weight: bold;
+    color: orangered;
+}
+</style>
+<body>
+    <header>
+        <h1>Katalog produktow</h1>
+    </header>
+
+    <div class="katalog">
+        <div class="produkt">
+            <img src="rtx.png" alt="Karta Graficzna 1">
+            <h2>GeForce RTX 3090</h2>
+            <p>24GB GDDR6X, 384-bit</p>
+            <p class="cena">Cena: 7999 PLN</p>
+        </div>
+        
+        <div class="produkt">
+            <img src="rtx.png" alt="Karta Graficzna 2">
+            <h2>GeForce RTX 3080</h2>
+            <p>10GB GDDR6X, 320-bit</p>
+            <p class="cena">Cena: 5999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rtx.png" alt="Karta Graficzna 3">
+            <h2>GeForce RTX 3070</h2>
+            <p>8GB GDDR6, 256-bit</p>
+            <p class="cena">Cena: 3999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rtx.png" alt="Karta Graficzna 4">
+            <h2>GeForce RTX 3060 Ti</h2>
+            <p>8GB GDDR6, 256-bit</p>
+            <p class="cena">Cena: 2999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rtx.png" alt="Karta Graficzna 5">
+            <h2>GeForce RTX 3060</h2>
+            <p>12GB GDDR6, 192-bit</p>
+            <p class="cena">Cena: 2399 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rx.png" alt="Karta Graficzna 6">
+            <h2>Radeon RX 6900 XT</h2>
+            <p>16GB GDDR6, 256-bit</p>
+            <p class="cena">Cena: 7499 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rx.png" alt="Karta Graficzna 7">
+            <h2>Radeon RX 6800 XT</h2>
+            <p>16GB GDDR6, 256-bit</p>
+            <p class="cena">Cena: 5999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rx.png" alt="Karta Graficzna 8">
+            <h2>Radeon RX 6700 XT</h2>
+            <p>12GB GDDR6, 192-bit</p>
+            <p class="cena">Cena: 3999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="rx.png" alt="Karta Graficzna 9">
+            <h2>Radeon RX 6600 XT</h2>
+            <p>8GB GDDR6, 128-bit</p>
+            <p class="cena">Cena: 2999 PLN</p>
+        </div>
+
+        <div class="produkt">
+            <img src="gtx.jpg" alt="Karta Graficzna 10">
+            <h2>GeForce GTX 1660</h2>
+            <p>6GB GDDR6, 192-bit</p>
+            <p class="cena">Cena: 1999 PLN</p>
+        </div>
+    </div>
+</body>
+</html>

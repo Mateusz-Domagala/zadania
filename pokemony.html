@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigm</title>
+</head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.zdjecia {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tor-zdjec {
+    overflow: hidden;
+    width: 100%;
+}
+
+.lista-zdjec {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sigma-zdjecie {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.sigma-zdjecie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.przycisk-zdjec {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightgrey;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    color: #007acc;
+    font-weight: bold;
+}
+
+.przycisk-zdjec.poprzedni {
+    left: 10px;
+}
+
+.przycisk-zdjec.nastepne {
+    right: 10px;
+}
+
+.przycisk-zdjec:hover {
+    background-color: lightblue
+}
+
+</style>
+<body>
+    <div class="zdjecia">
+        <button class="przycisk-zdjec poprzedni" onclick="poprzednieZdjecie()">‹</button>
+        <div class="tor-zdjec">
+            <ul class="lista-zdjec">
+                <li class="sigma-zdjecie"><img src="kanye1.jfif" alt="Sigma 1"></li>
+                <li class="sigma-zdjecie"><img src="kanye2.jfif" alt="Sigma 2"></li>
+                <li class="sigma-zdjecie"><img src="kanye3.jfif" alt="Sigma 3"></li>
+                <li class="sigma-zdjecie"><img src="kanye4.jfif" alt="Sigma 4"></li>
+                <li class="sigma-zdjecie"><img src="kanye5.jfif" alt="Sigma 5"></li>
+            </ul>
+        </div>
+        <button class="przycisk-zdjec nastepne" onclick="nastepneZdjecie()">›</button>
+    </div>
+
+    <script src="kanye.js"></script>
+</body>
+</html>
